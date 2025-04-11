@@ -1,9 +1,8 @@
-/* global Phaser */
 // Copyright (c) 2025 Shanea Jaromay All rights reserved
 //
 // Created by: Shanea Jaromay
 // Created on: Apr 2025
-// This is the Phaser3 game configuration file
+// This is the PHASER3 game configuration file
 
 /**
  * Start Phaser Game.
