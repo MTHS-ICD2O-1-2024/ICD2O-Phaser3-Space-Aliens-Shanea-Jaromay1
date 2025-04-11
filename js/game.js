@@ -1,4 +1,4 @@
-/*global Phaser */
+/* global Phaser */
 
 // Copyright (c) 2025 Shanea Jaromay All rights reserved
 //
@@ -24,8 +24,8 @@ const config = {
   scale: {
     mode: Phaser.Scale.FIT,
     // we place it in the middle of the page.
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-  },
+    autoCenter: Phaser.Scale.CENTER_BOTH
+  }
 }
 
 const game = new Phaser.Game(config)
