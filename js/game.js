@@ -1,3 +1,5 @@
+/*global Phaser */
+
 // Copyright (c) 2025 Shanea Jaromay All rights reserved
 //
 // Created by: Shanea Jaromay
@@ -12,10 +14,10 @@ const config = {
   width: 1920,
   height: 1080,
   physics: {
-    default: "arcade",
+    default: 'arcade',
     arcade: {
-      debug: true,
-    },
+      debug: true
+    }
   },
   // set background color
   backgroundColor: 0x5f6e7a,
