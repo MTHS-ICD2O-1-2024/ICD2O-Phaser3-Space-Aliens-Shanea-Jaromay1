@@ -1,10 +1,10 @@
 /* global Phaser */
 
-// Copyright (c) 2025 Shanea JaromayAll rights reserved
+// Copyright (c) 2025 Shanea Jaromayn All rights reserved
 //
 // Created by: Shanea Jaromay
 // Created on: Apr 2025
-// This is the Phaser3 game configuration file
+// This is the Splash Scene
 
 /**
 * This class is the Splash Scene.
@@ -48,10 +48,10 @@ class SplashScene extends Phaser.Scene {
   * Should be overridden by your own Scenes.
   * This method is called once per game step while the scene is running.
   *  @param {number} time - The current time.
-  *  @param {number} - The delta time in ms since the last frame.
+  *  @param {number} delta - The delta time in ms since the last frame.
   */
   update(time, delta) {
-    // pass
+    this.scene.switch("titleScene")
   }
 }
 export default SplashScene
