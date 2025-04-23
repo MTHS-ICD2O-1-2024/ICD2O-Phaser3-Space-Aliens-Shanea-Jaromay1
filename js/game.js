@@ -6,10 +6,13 @@
 // Created on: Apr 2025
 // This is the Phaser3 game configuration file
 
+// scene import statements
 import SplashScene from "./splashScene.js"
+import TitleScene from "./titleScene.js"
 
 //* Game scene */
 const splashScene = new SplashScene()
+const titleScene = new TitleScene()
 
 /**
 * Start Phaser Game.
