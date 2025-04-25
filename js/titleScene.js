@@ -7,7 +7,6 @@
 // This is the Title Scene
 
 /**
-<<<<<<< HEAD
  * This class is the Title Scene.
  */
 class TitleScene extends Phaser.Scene {
@@ -17,6 +16,7 @@ class TitleScene extends Phaser.Scene {
   constructor() {
     super({ key: "titleScene" })
   }
+
   /**
    * Can be defined on your own Scenes.
    * This method is called by the Scene Manager when the scene starts,
@@ -26,6 +26,7 @@ class TitleScene extends Phaser.Scene {
   init(data) {
     this.cameras.main.setBackgroundColor("ffffff")
   }
+
   /**
    * Can be defined on your own Scenes.
    * Use it to load assets.
@@ -33,14 +34,16 @@ class TitleScene extends Phaser.Scene {
   preload() {
     console.log("Title Scene")
   }
+
   /**
    * Can be defined on your own Scenes.
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    //pass
+    // pass
   }
+
   /**
    * Should be overridden by your own Scenes.
    * This method is called once per game step while the scene is running.
@@ -48,54 +51,8 @@ class TitleScene extends Phaser.Scene {
    *  @param {number} delta - The delta time in ms since the last frame.
    */
   update(time, delta) {
-    //pass
-=======
-* This class is the Title Scene.
-*/
-class TitleScene extends Phaser.Scene {
-  /**
-    * This method is the constructor.
-    */
-  constructor () {
-    super({ key: 'titleScene' })
-    }
-
-    /**
-    * Can be defined on your own Scenes.
-    * This method is called by the Scene Manager when the scene starts,
-    *  before preload() and create().
-    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
-    */
-    init (data) {
-      this.cameras.main.setBackgroundColor('ffffff')
-    }
-
-    /**
-    * Can be defined on your own Scenes.
-    * Use it to load assets.
-    */
-    preload () {
-    console.log('Title Scene')
-    }
-
-    /**
-    * Can be defined on your own Scenes.
-    * Use it to create your game objects.
-    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
-    */
-    create (data) {
     // pass
   }
-
-  /**
-    * Should be overridden by your own Scenes.
-    * This method is called once per game step while the scene is running.
-    *  @param {number} time - The current time.
-    *  @param {number} delta - The delta time in ms since the last frame.
-    */
-    update (time, delta) {
-      // pass
->>>>>>> 5861ea4ea03a0c4f1fc5ec105dbae7e53b9c5d4e
-  }
 }
+
 export default TitleScene
