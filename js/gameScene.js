@@ -14,7 +14,7 @@ class GameScene extends Phaser.Scene {
    * This method is the constructor.
    */
   constructor() {
-    super({ key: "gameScene" })
+    super({ key: 'gameScene' })
 
     this.background = null
     this.ship = null
@@ -86,7 +86,7 @@ class GameScene extends Phaser.Scene {
       }
     }
 
-    if (keySpaceObj.jsDown === true) {
+    if (keySpaceObj.isDown === true) {
       if (this.fireMissile === false) {
         // fire missile
         this.fireMissile = true
