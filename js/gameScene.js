@@ -29,6 +29,7 @@ class GameScene extends Phaser.Scene {
     this.score = 0
     this.scoreText = null
     this.scoreTextStyle = { font: '65px Arial', fill: '#ffffff', align: 'center' }
+    this.gameOverTextSTyle = { font: '65px Arial', fill: '#ff0000', align: 'center' }
   }
 
   /**
@@ -88,6 +89,18 @@ class GameScene extends Phaser.Scene {
     this.createAlien()
     this.createAlien()
   }.bind(this))
+
+  // Collisions between ship and aliens
+  this.physics.add.collider(this.ship, this.alienGroup, function (shipCollide, alienCollide) {
+    this.sound.play('bomb')
+    this.physics.pause()
+    alienCollide.destroy()
+    shipCollide.destroy()
+    this.gameOverText = this.add.text(1920 / 2, 1080 / 2, 'Game Over!\nClick to play again.', this.gameOverTextStyle)
+    .setOrigin(0.5)
+    this.gameOverText.setInteractive({ useHandCursor: true })
+    this.gameOverText.on('pointerdown', () => this.scene.start('gameScene'))
+    }.blind(this))
   }
 
   /**
